@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.4/dist/jquery.slim.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-sm bg-success navbar-dark">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Trang chủ</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" data-toggle="modal" data-target="#contactModal">Liên hệ</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container mt-4 mb-4">
+        <div class="row">
+            <div class="col-md-4">
+                <img src="data:image/jpeg;base64,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" width="100%">
+            </div>
+            <div class="col-md-8">
+                <h1>Học sinh</h1>
+                <p>
+                    Dưới đây là phần giới thiệu bản thân
+                </p>
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>
+                            <b>Họ tên: </b> Lý Gia Huy
+                        </p>
+                        <p>
+                            <b>Giới tính: </b> Nam
+                        </p>
+                        <p>
+                            <b>Dân tộc: </b> Kinh
+                        </p>
+                        <p>
+                            <b>Ngày sinh: </b> 26/10/2007
+                        </p>
+                        <p>
+                            <b>Số điện thoại: </b> 0898079410
+                        </p>
+                        <p>
+                            <b>Địa chỉ: </b> TP.HCM
+                        </p>
+                    </div>
+                    <div class="col-md-6">
+                        <p>
+                            <b>Tình trạng hôn nhân: </b> Độc thân
+                        </p>
+                        <p>
+                            <b>Email: </b> lysgiahuy@gmail.com
+                        </p>
+                        <p>
+                            <b>Trình độ học vấn: </b> Trung học phổ thông
+                        </p>
+                        <p>
+                            <b>Chuyên ngành: </b> Công nghệ thông tin
+                        </p>
+                        <p>
+                            <b>Ngôn ngữ: </b> Tiếng Việt
+                        </p>
+                        <p>
+                            <b>Sở thích: </b> Đi du lịch, xem phim, ...
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small bg-success text-white pt-4">
+
+        <!-- Footer Links -->
+        <div class="container-fluid text-center text-md-left">
+
+            <!-- Grid row -->
+            <div class="row">
+
+                <!-- Grid column -->
+                <div class="col-md-6 mt-md-0 mt-3">
+
+                    <!-- Content -->
+                    <h5 class="text-uppercase">Footer Content</h5>
+                    <p>Here you can use rows and columns to organize your footer content.</p>
+
+                </div>
+                <!-- Grid column -->
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="text-white" href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 mb-md-0 mb-3">
+
+                    <!-- Links -->
+                    <h5 class="text-uppercase">Links</h5>
+
+                    <ul class="list-unstyled">
+                        <li>
+                            <a class="text-white" href="#!">Link 1</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#!">Link 2</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#!">Link 3</a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="#!">Link 4</a>
+                        </li>
+                    </ul>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+            Author: Huy <i class=" text-danger"></i>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
+    <!-- The Contact Modal -->
+    <div class="modal" id="contactModal">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Liên hệ</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <form class="mb-3">
+                        <div class="form-group">
+                            <label>Họ tên <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa-solid fa-user"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Nhập tài khoản">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Email <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa-solid fa-envelope"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Nhập email">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Số điện thoại <span class="text-danger">*</span></label>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text"><i class="fa-solid fa-phone"></i></span>
+                                </div>
+                                <input type="text" class="form-control" placeholder="Nhập số điện thoại">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Nội dung liên hệ <span class="text-danger">*</span></label>
+                            <textarea class="form-control" placeholder="Nhập nội dung liên hệ" rows="5"></textarea>
+                        </div>
+                        <button type="button" class="btn btn-primary">Gửi</button>
+                    </form>
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Đóng</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
